@@ -106,8 +106,8 @@ Student network 可以成功辨識 **顛倒的 6 和顛倒的 9 了!** 注意，
 
 如何讓一個 network 同時有原 Domain 和新 Domain 的辨識能力呢 ? 以上面的 toy example 為例，就是辨識兩個 classes
 
-class 1: 6 and 顛倒的6
-class 2: 9 and 顛倒的9
+* class 1: 6 and 顛倒的6
+* class 2: 9 and 顛倒的9
 
 最直覺的做法，就是 T and S models 都跑一次辨識，然後將兩個後驗概率加起來後算 argmax。缺點就是 model size 立馬變成兩倍。
 
